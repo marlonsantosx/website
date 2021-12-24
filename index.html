@@ -6,25 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/reset.min.css">
-    <title>My WebSite</title>
+    <title></title>
 </head>
 
 <body>
     <div class="container">
-        <header class="header">
-            <h1>Programador Java Junior | Cursando Analise e Desenvolvimentos de Sistemas.</h1>
-        </header>
-        <main class="main">
-            <div class="about">
-                <img src="./img/my.PNG" alt="photo">
-            </div>
-        </main>
-        <footer class="footer">
-
-        </footer>
+        <button class="click">Click</button>
+        <div class="list">
+            <button class="links">Git Hub</button>
+            <button class="links">Instagram</button>
+            <button class="links">Twitter</button>
+            <button class="links">Discord</button>
+        </div>
     </div>
+
+    <script>
+        let click = document.querySelector('.click');
+        let list = document.querySelector('.list');
+        click.addEventListener("click", () => {
+            list.classList.toggle('newlist');
+        });
+    </script>
 </body>
 
 </html>
